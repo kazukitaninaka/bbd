@@ -20,11 +20,10 @@ const Home: NextPage = () => {
       <Head>
         <title>My DAPP</title>
       </Head>
-
+      <ConnectMetamask />
       <Heading as="h3" my={4}>
         Vintage Car List
       </Heading>
-      <ConnectMetamask />
 
       <VStack>
         <Box mb={0} p={4} w="100%" borderWidth="1px" borderRadius="lg">

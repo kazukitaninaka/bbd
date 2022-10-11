@@ -8,11 +8,20 @@ import {
   Image,
   Button,
 } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 
-const IMAGE =
-  "https://cdn2.lamag.com/wp-content/uploads/sites/6/2021/09/car001_1500x1000px.jpg";
+type Car = {
+  id: number;
+  name: string;
+  image: string;
+  price: number;
+};
 
-const Card = () => {
+const Card = ({ car }: { car: Car }) => {
+  const router = useRouter();
+  const handleClick = () => {
+    router.push(`/${car.id}`);
+  };
   return (
     <Center py={12}>
       <Box
@@ -39,7 +48,7 @@ const Card = () => {
             pos: "absolute",
             top: 5,
             left: 0,
-            backgroundImage: `url(${IMAGE})`,
+            backgroundImage: `url(${car.image})`,
             filter: "blur(15px)",
             zIndex: -1,
           }}
@@ -54,21 +63,21 @@ const Card = () => {
             height={188}
             width={282}
             objectFit={"cover"}
-            src={IMAGE}
+            src={car.image}
             alt="stuff"
           />
         </Box>
         <Stack pt={10} align={"center"}>
           <Text color={"gray.500"} fontSize={"sm"} textTransform={"uppercase"}>
-            Ferrari
+            {car.name}
           </Text>
           <Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>
             Vintage Car
           </Heading>
           <Text fontWeight={800} fontSize={"xl"}>
-            $100,000
+            ${car.price}
           </Text>
-          <Button>Pledge</Button>
+          <Button onClick={handleClick}>Pledge</Button>
         </Stack>
       </Box>
     </Center>
