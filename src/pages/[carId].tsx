@@ -166,7 +166,7 @@ const Car = () => {
             </Box>
           </Stack>
           <Box my="24" />
-          <PledgeForm custodians={car!.custodians} />
+          {car && <PledgeForm custodians={car?.custodians} />}
         </Stack>
       </SimpleGrid>
     </Container>
