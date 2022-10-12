@@ -9,7 +9,6 @@ import {
   Heading,
 } from "@chakra-ui/react";
 import { useState } from "react";
-import CurrencyInput from "react-currency-input-field";
 
 const PledgeForm = ({
   custodians,
