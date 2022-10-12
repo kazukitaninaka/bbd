@@ -68,11 +68,8 @@ const Card = ({ car }: { car: Car }) => {
           />
         </Box>
         <Stack pt={10} align={"center"}>
-          <Text color={"gray.500"} fontSize={"sm"} textTransform={"uppercase"}>
-            {car.name}
-          </Text>
           <Heading fontSize={"2xl"} fontFamily={"body"} fontWeight={500}>
-            Vintage Car
+            {car.name}
           </Heading>
           <Text fontWeight={800} fontSize={"xl"}>
             ${car.price}
