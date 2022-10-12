@@ -5,6 +5,20 @@ export const cars = [
     image:
       "https://cdn2.lamag.com/wp-content/uploads/sites/6/2021/09/car001_1500x1000px.jpg",
     price: 70,
+    custodians: [
+      {
+        id: 1,
+        name: "Museum of Modern Art",
+      },
+      {
+        id: 2,
+        name: "Archaeological Memorial Spot",
+      },
+      {
+        id: 3,
+        name: "Ethnological Museology Trading Co",
+      },
+    ],
   },
   {
     id: 2,
@@ -12,6 +26,20 @@ export const cars = [
     image:
       "https://cdn2.lamag.com/wp-content/uploads/sites/6/2021/09/car001_1500x1000px.jpg",
     price: 70,
+    custodians: [
+      {
+        id: 1,
+        name: "Museum of Modern Art",
+      },
+      {
+        id: 2,
+        name: "Archaeological Memorial Spot",
+      },
+      {
+        id: 3,
+        name: "Ethnological Museology Trading Co",
+      },
+    ],
   },
   {
     id: 3,
@@ -19,6 +47,20 @@ export const cars = [
     image:
       "https://cdn2.lamag.com/wp-content/uploads/sites/6/2021/09/car001_1500x1000px.jpg",
     price: 70,
+    custodians: [
+      {
+        id: 1,
+        name: "Museum of Modern Art",
+      },
+      {
+        id: 2,
+        name: "Archaeological Memorial Spot",
+      },
+      {
+        id: 3,
+        name: "Ethnological Museology Trading Co",
+      },
+    ],
   },
   {
     id: 4,
@@ -26,6 +68,20 @@ export const cars = [
     image:
       "https://cdn2.lamag.com/wp-content/uploads/sites/6/2021/09/car001_1500x1000px.jpg",
     price: 70,
+    custodians: [
+      {
+        id: 1,
+        name: "Museum of Modern Art",
+      },
+      {
+        id: 2,
+        name: "Archaeological Memorial Spot",
+      },
+      {
+        id: 3,
+        name: "Ethnological Museology Trading Co",
+      },
+    ],
   },
   {
     id: 5,
@@ -33,6 +89,20 @@ export const cars = [
     image:
       "https://cdn2.lamag.com/wp-content/uploads/sites/6/2021/09/car001_1500x1000px.jpg",
     price: 70,
+    custodians: [
+      {
+        id: 1,
+        name: "Museum of Modern Art",
+      },
+      {
+        id: 2,
+        name: "Archaeological Memorial Spot",
+      },
+      {
+        id: 3,
+        name: "Ethnological Museology Trading Co",
+      },
+    ],
   },
   {
     id: 6,
@@ -40,5 +110,19 @@ export const cars = [
     image:
       "https://cdn2.lamag.com/wp-content/uploads/sites/6/2021/09/car001_1500x1000px.jpg",
     price: 70,
+    custodians: [
+      {
+        id: 1,
+        name: "Museum of Modern Art",
+      },
+      {
+        id: 2,
+        name: "Archaeological Memorial Spot",
+      },
+      {
+        id: 3,
+        name: "Ethnological Museology Trading Co",
+      },
+    ],
   },
 ];

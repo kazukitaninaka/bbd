@@ -2,7 +2,7 @@
 import NextLink from "next/link"
 import { Flex, Button, useColorModeValue, Spacer, Heading, LinkBox, LinkOverlay } from '@chakra-ui/react'
 
-const siteTitle="FirstDAPP"
+const siteTitle="DAPP"
 export default function Header() {
 
   return (
@@ -15,7 +15,7 @@ export default function Header() {
         </NextLink>
       </LinkBox>      
       <Spacer />
-      <Button >Button for Account </Button>
+      {/* <Button >Button for Account </Button> */}
     </Flex>
   )
 }

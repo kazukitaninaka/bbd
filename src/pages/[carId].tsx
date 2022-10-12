@@ -1,21 +1,19 @@
 import {
   Box,
-  chakra,
   Container,
   Stack,
   Text,
   Image,
   Flex,
   VStack,
-  Button,
   Heading,
   SimpleGrid,
   StackDivider,
   useColorModeValue,
-  VisuallyHidden,
   List,
   ListItem,
 } from "@chakra-ui/react";
+import PledgeForm from "components/PledgeForm";
 import { useRouter } from "next/router";
 import { cars } from "../cars";
 
@@ -27,7 +25,7 @@ const Car = () => {
   return (
     <Container maxW={"7xl"}>
       <SimpleGrid
-        columns={{ base: 1, lg: 2 }}
+        columns={{ base: 1 }}
         spacing={{ base: 8, md: 10 }}
         py={{ base: 18, md: 24 }}
       >
@@ -167,23 +165,8 @@ const Car = () => {
               </List>
             </Box>
           </Stack>
-
-          <Button
-            rounded={"none"}
-            w={"full"}
-            mt={8}
-            size={"lg"}
-            py={"7"}
-            bg={useColorModeValue("gray.900", "gray.50")}
-            color={useColorModeValue("white", "gray.900")}
-            textTransform={"uppercase"}
-            _hover={{
-              transform: "translateY(2px)",
-              boxShadow: "lg",
-            }}
-          >
-            Pledge
-          </Button>
+          <Box my="24" />
+          <PledgeForm custodians={car!.custodians} />
         </Stack>
       </SimpleGrid>
     </Container>

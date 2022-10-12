@@ -29,7 +29,7 @@ const Home: NextPage = () => {
         <Box mb={0} p={4} w="100%" borderWidth="1px" borderRadius="lg">
           <Cars />
         </Box>
-        <Box mb={0} p={4} w="100%" borderWidth="1px" borderRadius="lg">
+        {/* <Box mb={0} p={4} w="100%" borderWidth="1px" borderRadius="lg">
           <Heading my={4} fontSize="xl">
             ETH Balance
           </Heading>
@@ -55,7 +55,7 @@ const Home: NextPage = () => {
             Transfer ClassToken ERC20 token
           </Heading>
           <TransferERC20 addressContract={addressContract} />
-        </Box>
+        </Box> */}
       </VStack>
     </>
   );
