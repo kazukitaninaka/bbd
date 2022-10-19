@@ -3,7 +3,7 @@ import type { NextPage } from "next";
 import Head from "next/head";
 import NextLink from "next/link";
 import { VStack, Heading, Box, LinkOverlay, LinkBox } from "@chakra-ui/layout";
-import { Text, Button, Flex } from "@chakra-ui/react";
+import { Text, Button } from "@chakra-ui/react";
 import ConnectMetamask from "components/ConnectMetamask";
 import ETHBalance from "components/ETHBalance";
 import ETHBalanceSWR from "components/ETHBalanceSWR";
@@ -11,24 +11,27 @@ import ReadERC20 from "components/ReadERC20";
 import TransferERC20 from "components/TransferERC20";
 import { addressContract } from "../constants";
 import Cars from "components/Cars";
+import { useWeb3React } from "@web3-react/core";
+import { Web3Provider } from "@ethersproject/providers";
 
-const Home: NextPage = () => {
+const cars: NextPage = () => {
   // const addressContract='0x5fbdb2315678afecb367f032d93f642f64180aa3'
 
   return (
     <>
-      <Flex justifyContent="center" alignItems="center" h="100%">
-        <ConnectMetamask />
-      </Flex>
-      {/* <Heading as="h3" my={4}>
+      <Head>
+        <title>My DAPP</title>
+      </Head>
+      <ConnectMetamask />
+      <Heading as="h3" my={4}>
         Vintage Car List
       </Heading>
 
       <VStack>
         <Box mb={0} p={4} w="100%" borderWidth="1px" borderRadius="lg">
           <Cars />
-        </Box> */}
-      {/* <Box mb={0} p={4} w="100%" borderWidth="1px" borderRadius="lg">
+        </Box>
+        {/* <Box mb={0} p={4} w="100%" borderWidth="1px" borderRadius="lg">
           <Heading my={4} fontSize="xl">
             ETH Balance
           </Heading>
@@ -55,9 +58,9 @@ const Home: NextPage = () => {
           </Heading>
           <TransferERC20 addressContract={addressContract} />
         </Box> */}
-      {/* </VStack> */}
+      </VStack>
     </>
   );
 };
 
-export default Home;
+export default cars;
