@@ -9,7 +9,7 @@ import ETHBalance from "components/ETHBalance";
 import ETHBalanceSWR from "components/ETHBalanceSWR";
 import ReadERC20 from "components/ReadERC20";
 import TransferERC20 from "components/TransferERC20";
-import { addressContract } from "../constants";
+import { addressContract } from "../../constants";
 import Cars from "components/Cars";
 import { useWeb3React } from "@web3-react/core";
 import { Web3Provider } from "@ethersproject/providers";

@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import PledgeForm from "components/PledgeForm";
 import { useRouter } from "next/router";
-import { cars } from "../cars";
+import { cars } from "../../cars";
 
 const Car = () => {
   const router = useRouter();

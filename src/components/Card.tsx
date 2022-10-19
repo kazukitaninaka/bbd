@@ -20,7 +20,7 @@ type Car = {
 const Card = ({ car }: { car: Car }) => {
   const router = useRouter();
   const handleClick = () => {
-    router.push(`/${car.id}`);
+    router.push(`/cars/${car.id}`);
   };
   return (
     <Center py={12}>
