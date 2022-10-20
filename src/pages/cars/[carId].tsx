@@ -54,7 +54,7 @@ const Car = () => {
               fontWeight={300}
               fontSize={"2xl"}
             >
-              ${car?.price}
+              {car?.price}
             </Text>
           </Box>
 

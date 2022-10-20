@@ -72,7 +72,7 @@ const Card = ({ car }: { car: Car }) => {
             {car.name}
           </Heading>
           <Text fontWeight={800} fontSize={"xl"}>
-            ${car.price}
+            {car.price}
           </Text>
           <Button onClick={handleClick}>Pledge</Button>
         </Stack>
