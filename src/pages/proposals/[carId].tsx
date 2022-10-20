@@ -36,7 +36,7 @@ const Proposals = () => {
   ];
   const router = useRouter();
   const { carId } = router.query;
-  const car = cars.find((car) => car.id === +carId);
+  const car = cars.find((car) => car.id === +carId!);
   return (
     <>
       <Heading fontSize="2xl" mb="8">

@@ -14,7 +14,7 @@ type Car = {
   id: number;
   name: string;
   image: string;
-  price: number;
+  price: string;
 };
 
 const Card = ({ car }: { car: Car }) => {
