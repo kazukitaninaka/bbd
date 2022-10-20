@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import PledgeForm from "components/PledgeForm";
 import { useRouter } from "next/router";
-import { cars } from "../../cars";
+import { cars } from "../../constants";
 
 const Car = () => {
   const router = useRouter();
@@ -121,46 +121,45 @@ const Car = () => {
               <List spacing={2}>
                 <ListItem>
                   <Text as={"span"} fontWeight={"bold"}>
-                    Between lugs:
+                    Year:
                   </Text>{" "}
-                  20 mm
+                  1953
                 </ListItem>
                 <ListItem>
                   <Text as={"span"} fontWeight={"bold"}>
-                    Bracelet:
+                    Body Style:
                   </Text>{" "}
-                  leather strap
+                  4DR SPOR
                 </ListItem>
                 <ListItem>
                   <Text as={"span"} fontWeight={"bold"}>
-                    Case:
+                    Vehicle Type:
                   </Text>{" "}
-                  Steel
+                  Automible
                 </ListItem>
                 <ListItem>
                   <Text as={"span"} fontWeight={"bold"}>
-                    Case diameter:
+                    Color:
                   </Text>{" "}
-                  42 mm
+                  White
                 </ListItem>
                 <ListItem>
                   <Text as={"span"} fontWeight={"bold"}>
-                    Dial color:
+                    Engine Type:
                   </Text>{" "}
-                  Black
+                  3.0L 6
                 </ListItem>
                 <ListItem>
                   <Text as={"span"} fontWeight={"bold"}>
-                    Crystal:
+                    CCylinders:
                   </Text>{" "}
-                  Domed, scratch‑resistant sapphire crystal with anti‑reflective
-                  treatment inside
+                  6
                 </ListItem>
                 <ListItem>
                   <Text as={"span"} fontWeight={"bold"}>
-                    Water resistance:
+                    Transmission:
                   </Text>{" "}
-                  5 bar (50 metres / 167 feet){" "}
+                  Automatic{" "}
                 </ListItem>
               </List>
             </Box>

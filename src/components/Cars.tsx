@@ -1,6 +1,6 @@
 import { SimpleGrid } from "@chakra-ui/react";
 import Card from "./Card";
-import { cars } from "../cars";
+import { cars } from "../constants";
 
 const Cars = () => {
   return (

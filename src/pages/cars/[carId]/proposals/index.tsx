@@ -11,29 +11,9 @@ import {
 } from "@chakra-ui/react";
 import { useRouter } from "next/router";
 import { formatAddress } from "utils/helpers";
-import { cars } from "../../cars";
+import { cars, proposals } from "../../../../constants";
 
 const Proposals = () => {
-  const proposals = [
-    {
-      title: "Renting for a temporary exhibition at Sommer's Automobile Museum",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet at delectus doloribus dolorum expedita hic, ipsum maxime modi nam officiis porro, quae, quisquam quos reprehenderit velit? Natus, totam.",
-      address: "0x82F5387acf1D5B6240dE61f833E3eF904455ca4a",
-    },
-    {
-      title: "Change custodian",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet at delectus doloribus dolorum expedita hic, ipsum maxime modi nam officiis porro, quae, quisquam quos reprehenderit velit? Natus, totam.",
-      address: "0x68T387acf1D5B6240dE61f833E3eF904455ca3b",
-    },
-    {
-      title: "Change custodian",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad aliquid amet at delectus doloribus dolorum expedita hic, ipsum maxime modi nam officiis porro, quae, quisquam quos reprehenderit velit? Natus, totam.",
-      address: "0x53D5387acf1D5B6240dE61f833E3eF904455ca0x",
-    },
-  ];
   const router = useRouter();
   const { carId } = router.query;
   const car = cars.find((car) => car.id === +carId!);
@@ -59,7 +39,7 @@ const Proposals = () => {
 const ProposalCard = ({
   proposal,
 }: {
-  proposal: { title: string; description: string; address: string };
+  proposal: { id: number; title: string; description: string; address: string };
 }) => {
   const router = useRouter();
   return (
@@ -78,7 +58,7 @@ const ProposalCard = ({
         boxShadow: "2xl",
       }}
       cursor="pointer"
-      onClick={() => router.push(`${router.asPath}/detail`)}
+      onClick={() => router.push(`${router.asPath}/${proposal.id}`)}
     >
       <Heading fontSize="2xl" fontWeight="bold" mb="3">
         {proposal.title}

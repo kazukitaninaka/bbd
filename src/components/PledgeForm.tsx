@@ -77,6 +77,7 @@ const PledgeForm = ({
               {custodian.name}
             </Radio>
           ))}
+          <Radio value="do not care">Do not care about the custodian</Radio>
         </Stack>
       </RadioGroup>
       <Button
