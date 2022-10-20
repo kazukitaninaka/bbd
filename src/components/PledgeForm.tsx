@@ -8,6 +8,7 @@ import {
   Text,
   Heading,
 } from "@chakra-ui/react";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
 const PledgeForm = ({
@@ -19,6 +20,10 @@ const PledgeForm = ({
   const [custodian, setCustodian] = useState<string>(
     custodians[0].id.toString()
   );
+  const router = useRouter();
+  const handlePledge = () => {
+    router.push("/thanks");
+  };
   return (
     <>
       <Heading
@@ -87,6 +92,7 @@ const PledgeForm = ({
           transform: "translateY(2px)",
           boxShadow: "lg",
         }}
+        onClick={handlePledge}
       >
         Pledge
       </Button>
