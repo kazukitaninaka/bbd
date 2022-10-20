@@ -31,7 +31,7 @@ const PledgeForm = ({
         fontWeight={600}
         fontSize={{ base: "2xl", sm: "4xl", lg: "5xl" }}
       >
-        Wanna Pledge?
+        Want to Pledge?
       </Heading>
       <Text
         fontSize={{ base: "16px", lg: "18px" }}
