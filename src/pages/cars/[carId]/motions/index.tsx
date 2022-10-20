@@ -20,7 +20,7 @@ const Proposals = () => {
   return (
     <>
       <Heading fontSize="2xl" mb="8">
-        Proposals on {car?.name}
+        Motions on {car?.name}
       </Heading>
       <VStack gap="3">
         {proposals.map((proposal, index) => {
